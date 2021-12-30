@@ -1,6 +1,5 @@
-console.log("Hi there");
-
-function myFunction() {
+// Dark Mode Toggle
+function darkMode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
-} 
+}

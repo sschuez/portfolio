@@ -1,0 +1,75 @@
+@use "../config/config.sass.scss" as *;
+
+h1 {
+  font-family: $font-family;
+  /* color: $font-color; */
+}
+
+h2 {
+  font-family: $font-family;
+  /* color: $font-color; */
+}
+
+h3 {
+  font-family: $font-family;
+  /* color: $font-color; */
+}
+
+p {
+  font-family: $font-family;
+  /* color: $font-color; */
+}
+
+body {
+  background-color: $background-color-dark;
+  color: $font-color-dark;
+  text-align: center;
+}
+
+.dark-mode {
+  background-color: $background-color;
+  color: $font-color;
+}
+
+/* Responsive */
+
+/* Smallest device */
+@media (min-width: 100px) and (max-width: 575px) {
+  .background-main {
+    padding: 12px 12px 64px 12px; 
+  }
+  
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .background-main {
+    padding: 12px 24px 64px 24px; 
+  }
+  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .background-main {
+    padding: 12px 36px 64px 36px; 
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .background-main {
+    padding: 24px 150px 64px 150px; 
+  }
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .background-main {
+    padding: 24px 200px 64px 200px; 
+  }
+  
+}
+

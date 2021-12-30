@@ -16,8 +16,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet"> 
   
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/config.css">
-  <link rel="stylesheet" href="css/stylesheet.css">
+  <script src="https://kit.fontawesome.com/649ff54fcc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="dist/css/main.css">
 
   <title>Stephen Schüz</title>
 </head>
@@ -31,8 +31,15 @@
     <h3>H3 title</h3>
     <p>Test 1</p>
 
-    <button onclick="myFunction()">Click Me</button>
-    
+    <!-- Rounded switch Dark Mode -->
+    <div class="dark-mode-switch">
+      <i class="fas fa-moon"></i>
+      <label class="switch">
+        <input type="checkbox" onclick="darkMode()">
+        <span class="slider round"></span>
+      </label>
+      <i class="fas fa-sun"></i>
+    </div>
 
   </div>
   <script src="javascript/app.js"></script>
