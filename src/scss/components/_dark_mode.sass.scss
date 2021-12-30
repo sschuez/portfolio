@@ -4,13 +4,13 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 12px;
+  top: -68px;
   right: 12px;
 }
 
 .dark-mode-switch .fas {
-  margin: 4px 6px;
-  font-size: 14px;
+  margin: 3px 6px;
+  font-size: 18px;
 }
 
 /* The switch - the box around the slider */
@@ -54,11 +54,11 @@
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: $toggle-switch;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px $toggle-switch;
 }
 
 input:checked + .slider:before {
