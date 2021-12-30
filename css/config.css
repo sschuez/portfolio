@@ -1,33 +1,39 @@
 /* Variables */
 :root {
-  --background-color: #002137;
-  --font-color: #fbfefb;
+  --background-color: #fbfefb;
+  --background-color-dark: #002137;
+  --font-color-dark: #fbfefb;
   --font-family: 'Roboto', sans-serif;
 }
 
 h1 {
   font-family: var(--font-family);
-  color: var(--font-color);
+  /* color: var(--font-color); */
 }
 
 h2 {
   font-family: var(--font-family);
-  color: var(--font-color);
+  /* color: var(--font-color); */
 }
 
 h3 {
   font-family: var(--font-family);
-  color: var(--font-color);
+  /* color: var(--font-color); */
 }
 
 p {
   font-family: var(--font-family);
-  color: var(--font-color);
+  /* color: var(--font-color); */
 }
 
 body {
   background-color: var(--background-color);
   text-align: center;
+}
+
+.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--font-color-dark);
 }
 
 /* Responsive */
