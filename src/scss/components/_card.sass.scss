@@ -4,11 +4,11 @@
   // padding: 48px; 
   // width: 100%;
   border-radius: 25px;
-  background: $card-background-dark;
+  background: $card-background;
   line-height: 1.5em;
   letter-spacing: 0.3px;
   // margin: 12px 0 0 0;
-  box-shadow: 2px 1px 1px $card-background-dark;
+  box-shadow: 2px 1px 1px $card-background;
   position: relative;
   a {
     text-decoration: none;
@@ -16,7 +16,7 @@
 }
 
 .dark-mode .intro-card  {
-  background: grey;
+  background: $card-background-dark;
   box-shadow: 2px 1px 1px $card-background-dark;
 }
 

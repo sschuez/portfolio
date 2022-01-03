@@ -2,38 +2,34 @@
 
 h1 {
   font-family: $font-family;
-  /* color: $font-color; */
 }
 
 h2 {
   font-family: $font-family;
-  /* color: $font-color; */
 }
 
 h3 {
   font-family: $font-family;
-  /* color: $font-color; */
 }
 
 p {
   font-family: $font-family;
-  /* color: $font-color; */
 }
 
 body {
-  background-color: $background-color-dark;
-  color: $font-color-dark;
+  background-color: $background-color;
+  color: $font-color;
   text-align: center;
   position: relative;
   margin-top: 80px;
 }
 
 .dark-mode {
-  background-color: $background-color;
-  color: $font-color;
+  background-color: $background-color-dark;
+  color: $font-color-dark;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 
 /* Smallest device */
 @media (min-width: 100px) and (max-width: 575px) {

@@ -35,9 +35,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  background-color: #19328a;
 }
 
 .slider:before {
@@ -53,11 +53,11 @@
 }
 
 input:checked + .slider {
-  background-color: #19328a;
+  background-color: #ccc;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #19328a;
+  box-shadow: 0 0 1px #ccc;
 }
 
 input:checked + .slider:before {
@@ -82,10 +82,10 @@ input:checked + .slider:before {
 
 .intro-card {
   border-radius: 25px;
-  background: #003a61;
+  background: #faedcd;
   line-height: 1.5em;
   letter-spacing: 0.3px;
-  box-shadow: 2px 1px 1px #003a61;
+  box-shadow: 2px 1px 1px #faedcd;
   position: relative;
 }
 .intro-card a {
@@ -93,8 +93,8 @@ input:checked + .slider:before {
 }
 
 .dark-mode .intro-card {
-  background: grey;
-  box-shadow: 2px 1px 1px #003a61;
+  background: #27323E;
+  box-shadow: 2px 1px 1px #27323E;
 }
 
 @media (min-width: 100px) and (max-width: 575px) {
@@ -129,38 +129,34 @@ input:checked + .slider:before {
 }
 h1 {
   font-family: "Roboto", sans-serif;
-  /* color: $font-color; */
 }
 
 h2 {
   font-family: "Roboto", sans-serif;
-  /* color: $font-color; */
 }
 
 h3 {
   font-family: "Roboto", sans-serif;
-  /* color: $font-color; */
 }
 
 p {
   font-family: "Roboto", sans-serif;
-  /* color: $font-color; */
 }
 
 body {
-  background-color: #002137;
-  color: #fbfefb;
+  background-color: #fefae0;
+  color: #1B2733;
   text-align: center;
   position: relative;
   margin-top: 80px;
 }
 
 .dark-mode {
-  background-color: #fbfefb;
-  color: black;
+  background-color: #1B2733;
+  color: #fefae0;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 /* Smallest device */
 @media (min-width: 100px) and (max-width: 575px) {
   .background-main {
