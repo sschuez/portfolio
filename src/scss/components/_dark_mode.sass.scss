@@ -38,7 +38,7 @@
   bottom: 0;
   -webkit-transition: .4s;
   transition: .4s;
-  background-color: $toggle-switch;
+  background-color: $toggle-switch-dark;
 }
 
 .slider:before {
@@ -54,11 +54,11 @@
 }
 
 input:checked + .slider {
-  background-color: #ccc;
+  background-color: $toggle-switch;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #ccc;
+  box-shadow: 0 0 1px $toggle-switch;
 }
 
 input:checked + .slider:before {

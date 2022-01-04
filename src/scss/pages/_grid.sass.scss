@@ -1,0 +1,13 @@
+@use "../config/config.sass.scss" as *;
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0;
+  align-items: center // This one changes cards to their size even if grid is larger
+}
+
+.grid-item {
+  background-color: pink;
+}
