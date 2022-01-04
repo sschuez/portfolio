@@ -1,0 +1,222 @@
+/* Variables */
+.dark-mode-switch {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -68px;
+  right: 12px;
+}
+
+.dark-mode-switch .fas {
+  margin: 3px 6px;
+  font-size: 18px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #19328a;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #d4a373;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #d4a373;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.avatar-large {
+  width: 200px;
+  border-radius: 50%;
+  background-color: #ff8966;
+}
+
+.dark-mode .avatar-large {
+  background-color: #ff8966;
+}
+
+.intro-card {
+  border-radius: 25px;
+  background: #faedcd;
+  line-height: 1.5em;
+  letter-spacing: 0.3px;
+  box-shadow: 2px 1px 1px #faedcd;
+  position: relative;
+}
+.intro-card a {
+  text-decoration: none;
+}
+
+.dark-mode .intro-card {
+  background: #27323E;
+  box-shadow: 2px 1px 1px #27323E;
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .intro-card {
+    padding: 12px;
+    margin: 34px 0;
+  }
+}
+@media (min-width: 576px) {
+  .intro-card {
+    padding: 12px;
+    margin: 34px 75px;
+  }
+}
+@media (min-width: 768px) {
+  .intro-card {
+    padding: 12px 36px 12px 36px;
+    margin: 34px 100px;
+  }
+}
+@media (min-width: 992px) {
+  .intro-card {
+    padding: 12px 48px 12px 48px;
+    margin: 34px 130px;
+  }
+}
+@media (min-width: 1200px) {
+  .intro-card {
+    padding: 12px 90px 12px 90px;
+    margin: 34px 160px;
+  }
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #ff8966;
+  text-decoration: none;
+}
+
+body {
+  background-color: #fefae0;
+  color: #1B2733;
+  text-align: center;
+  position: relative;
+  margin-top: 80px;
+}
+
+.dark-mode {
+  background-color: #1B2733;
+  color: #fefae0;
+}
+.dark-mode a {
+  color: #ff8966;
+}
+
+.dark-mode a {
+  columns: red;
+}
+
+/* RESPONSIVE */
+/* Smallest device */
+@media (min-width: 100px) and (max-width: 575px) {
+  .background-main {
+    padding: 12px 12px 64px 12px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .background-main {
+    padding: 12px 24px 64px 24px;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .background-main {
+    padding: 12px 36px 64px 36px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .background-main {
+    padding: 24px 70px 64px 70px;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .background-main {
+    padding: 24px 100px 64px 100px;
+  }
+}
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0;
+}
+
+.grid-item {
+  text-align: left;
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px 10px 10px 42px;
+}
+
+/*# sourceMappingURL=main.css.map */
