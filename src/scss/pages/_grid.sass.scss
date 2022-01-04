@@ -2,12 +2,18 @@
 
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   padding: 0;
-  align-items: center // This one changes cards to their size even if grid is larger
+  // align-items: center // Changes cards to their size even if grid is larger
 }
 
 .grid-item {
-  background-color: pink;
+  text-align: left;
+  // background-color: blue;
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px 10px 10px 42px;
 }
+

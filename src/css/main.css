@@ -117,19 +117,19 @@ input:checked + .slider:before {
 @media (min-width: 768px) {
   .intro-card {
     padding: 12px 36px 12px 36px;
-    margin: 34px 130px;
+    margin: 34px 100px;
   }
 }
 @media (min-width: 992px) {
   .intro-card {
     padding: 12px 48px 12px 48px;
-    margin: 34px 160px;
+    margin: 34px 130px;
   }
 }
 @media (min-width: 1200px) {
   .intro-card {
     padding: 12px 90px 12px 90px;
-    margin: 34px 190px;
+    margin: 34px 160px;
   }
 }
 h1 {
@@ -148,6 +148,11 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  color: #ff8966;
+  text-decoration: none;
+}
+
 body {
   background-color: #fefae0;
   color: #1B2733;
@@ -159,6 +164,13 @@ body {
 .dark-mode {
   background-color: #1B2733;
   color: #fefae0;
+}
+.dark-mode a {
+  color: #ff8966;
+}
+
+.dark-mode a {
+  columns: red;
 }
 
 /* RESPONSIVE */
@@ -183,25 +195,28 @@ body {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .background-main {
-    padding: 24px 150px 64px 150px;
+    padding: 24px 70px 64px 70px;
   }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .background-main {
-    padding: 24px 200px 64px 200px;
+    padding: 24px 100px 64px 100px;
   }
 }
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   padding: 0;
-  align-items: center;
 }
 
 .grid-item {
-  background-color: pink;
+  text-align: left;
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px 10px 10px 42px;
 }
 
 /*# sourceMappingURL=main.css.map */

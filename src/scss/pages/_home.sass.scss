@@ -16,6 +16,10 @@ p {
   font-family: $font-family;
 }
 
+a {
+  color: $links;
+  text-decoration: none;
+}
 
 body {
   background-color: $background-color;
@@ -28,6 +32,14 @@ body {
 .dark-mode {
   background-color: $background-color-dark;
   color: $font-color-dark;
+  
+  a {
+    color: $links-dark;
+  }
+}
+
+.dark-mode a {
+  columns: red;
 }
 
 /* RESPONSIVE */
@@ -59,7 +71,7 @@ body {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .background-main {
-    padding: 24px 150px 64px 150px; 
+    padding: 24px 70px 64px 70px; 
   }
   
 }
@@ -67,7 +79,7 @@ body {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .background-main {
-    padding: 24px 200px 64px 200px; 
+    padding: 24px 100px 64px 100px; 
   }
   
 }
