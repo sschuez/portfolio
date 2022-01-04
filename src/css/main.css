@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variables */
 .dark-mode-switch {
   display: flex;
@@ -132,6 +133,42 @@ input:checked + .slider:before {
     margin: 34px 160px;
   }
 }
+.accordion {
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #27323E;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  flex-basis: 100%;
+}
+
+.accordion:after {
+  content: "➕";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "➖";
+  /* Unicode character for "minus" sign (-) */
+}
+
 h1 {
   font-family: "Roboto", sans-serif;
 }
@@ -217,6 +254,11 @@ body {
   height: auto;
   margin: 0 auto;
   padding: 10px 10px 10px 42px;
+}
+
+.list-item {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=main.css.map */
