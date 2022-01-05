@@ -20,5 +20,48 @@
 .list-item {
   display: flex;
   flex-wrap: wrap;
-  // position: absolute;
+  margin-top: -16px;
 }
+
+/* RESPONSIVE */
+
+/* Smallest device */
+@media (min-width: 100px) and (max-width: 575px) {
+  .grid-item {
+    padding: 12px 12px 64px 12px; 
+  }
+  
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .grid-item {
+    padding: 12px 24px 64px 24px; 
+  }
+  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .grid-item {
+    padding: 12px 36px 64px 36px; 
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .grid-item {
+    padding: 24px 70px 64px 70px; 
+  }
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .grid-item {
+    padding: 24px 100px 64px 100px; 
+  }
+  
+}
+

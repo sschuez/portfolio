@@ -3,39 +3,35 @@
 //  Style the buttons that are used to open and close the accordion panel
  .accordion {
   cursor: pointer;
-  padding: 18px;
-  // width: 100%;
+  padding: 18px 0 18px 6px;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
-  // position: relative;
-  // left: 190px;
-  // top: -100px;
+  color: $links;
 }
 
 // Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover)
 .active, .accordion:hover {
-  background-color: #ccc;
+  color: $links;
 }
 
 .panel {
   padding: 0 18px;
-  background-color: $card-background-dark;
+  background-color: $card-background;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   flex-basis: 100%;
+  border-radius: 3px 3px 16px 16px;
+  margin: -12px 24px 12px 0;
 }
 
-.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+.dark-mode .panel {
+  background-color: $card-background-dark;
+}
+
+.accordion .fas {
+  margin-left: 12px;
   font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
