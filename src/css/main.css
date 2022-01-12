@@ -224,7 +224,6 @@ input:checked + .slider:before {
   width: 80%;
   max-width: 700px;
   text-align: center;
-  color: #ccc;
   padding: 10px 0;
   height: 150px;
 }
