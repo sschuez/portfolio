@@ -101,12 +101,27 @@
             <div id="myModal" class="modal">
               <!-- The Close Button -->
               <span class="close">&times;</span>
-              <!-- Modal Content (The Image) -->
-              <img class="modal-content" id="img01">
-              <!-- Modal Caption (Image Text) -->
-              <div id="caption">
-                <p>Hi there</p>
-              </div>
+              
+              <!-- Modal Content (The Images) -->
+                <!-- Image 1 -->
+                <div class="mySlides fade">
+                  <img class= "modal-content" src="src/images/screenshot_bjj.png">
+                  <div id="caption">
+                    <p>Hi there</p>
+                  </div>
+                </div>
+                
+                <!-- Image 2 -->
+                <div class="mySlides fade">
+                  <img class= "modal-content" src="src/images/passphoto.png">
+                  <div id="caption">
+                    <p>Hi there</p>
+                  </div>
+                </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             
             <p>Here's a demo version, which I prepared with anonymous user data: <a href="http://bjj-demo.herokuapp.com/" target="_blank">Demo App</a> *</p>
