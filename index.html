@@ -90,10 +90,33 @@
         </div>
 
         <div class="list-item">
-          <p>Bla @ <a href="#" target="_blank">bla</a></p>
+          <p>Freelance @ <a href="https://bjj.berlin/en/bjj-movement-yoga/" target="_blank">Bjj Dojo Berlin</a></p>
           <div class="accordion"><i class="fas fa-plus"></i></div>
           <div class="panel">
-            <p>Lorem ipsum...</p>
+            <p>Created a student management system for the teachers and students of Bjj Dojo Berlin. Check out the images:</p>
+            
+            <!-- Image, trigger modal -->
+            <img id="myImg" class="preview-img" src="src/images/screenshot_bjj.png" alt="">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption">
+                <p>Hi there</p>
+              </div>
+            </div>
+            
+            <p>Here's a demo version, which I prepared with anonymous user data: <a href="http://bjj-demo.herokuapp.com/" target="_blank">Demo App</a> *</p>
+            <p>
+              For full admin funcionality use:
+              <small>Username: <strong>demo@bjj.com</strong></small><br>
+              <small>Password: <strong>aaaaaa</strong></small>
+            </p>
+            <p><small>* It's a on a free tier heroku plan, give it some time to start up (up to 30s)..</small></p>
+              
           </div>
         </div>
       </div>
@@ -168,7 +191,8 @@
     </div>
 
     <p><a href="mailto: stephens@hey.com">Get in touch!</a></p>
-  </div>  
+  </div>
+  
   <script src="src/javascript/app.js"></script>
 </body>
 </html>
