@@ -234,6 +234,7 @@ input:checked + .slider:before {
   text-align: center;
   padding: 10px 0;
   height: 150px;
+  margin-bottom: 50px !important;
 }
 
 /* Add Animation - Zoom in the Modal */
