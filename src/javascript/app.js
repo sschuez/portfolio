@@ -83,8 +83,6 @@ imgs.forEach((img) => {
     
     // Function to define which img to show
     function showSlides(n, scope) {
-      console.log(n);
-      console.log(scope);
       var i;
       var slides = scope.getElementsByClassName("mySlides");
       // var dots = scope.getElementsByClassName("dot");

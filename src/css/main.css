@@ -142,6 +142,14 @@ input:checked + .slider:before {
   color: #ff8966;
 }
 
+.dark-mode .accordion {
+  color: #ff8966;
+}
+
+.dark-mode .accordion:hover {
+  color: #ff8966;
+}
+
 .active, .accordion:hover {
   color: #ff8966;
 }
@@ -332,6 +340,29 @@ input:checked + .slider:before {
     opacity: 1;
   }
 }
+.btn-ghost {
+  color: #ff8966;
+  border: 1px solid #ff8966;
+  padding: 8px 24px;
+  border-radius: 50px;
+  transition: opacity 0.3s ease;
+}
+
+.dark-mode .btn-ghost {
+  color: #ff8966;
+  border: 1px solid #ff8966;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+  font-weight: bold;
+  border: 2px solid #ff8966;
+}
+
+.dark-mode .btn-ghost:hover {
+  border: 2px solid #ff8966;
+}
+
 h1 {
   font-family: "Roboto", sans-serif;
 }
