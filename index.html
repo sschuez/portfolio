@@ -36,7 +36,7 @@
     </div>
 
     <!-- AVATAR -->
-    <img class="avatar-large" alt="avatar-large" src="src/images/passphoto.png" />
+    <img class="avatar-large" alt="avatar-large" src="src/images/misc/passphoto.png" />
 
     <!-- TITLE -->
     <h1>Stephen Schüz</h1>
@@ -81,22 +81,15 @@
           </div>
         </div>
        
+        <!-- IN FRIEDEN -->
         <div class="list-item">
-          <p>Bla @ <a href="#" target="_blank">bla</a></p>
+          <p>Own initiative: <a href="https://in-frieden.herokuapp.com/" target="_blank">In Frieden</a></p>
           <div class="accordion"><i class="fas fa-plus"></i></div>
           <div class="panel">
-            <p>Lorem ipsum...</p>
-          </div>
-        </div>
-
-        <div class="list-item">
-          <p>Freelance @ <a href="https://bjj.berlin/en/bjj-movement-yoga/" target="_blank">Bjj Dojo Berlin</a></p>
-          <div class="accordion"><i class="fas fa-plus"></i></div>
-          <div class="panel">
-            <p>Created a student management system for the teachers and students of Bjj Dojo Berlin. Check out the images:</p>
+            <p>I built a platform for users to create, share and interact with obituary pages for their deceased loved ones.</p>
             
             <!-- Image, trigger modal -->
-            <img id="myImg" class="preview-img" src="src/images/screenshot_bjj.png" alt="">
+            <img id="modalTrigger" class="preview-img" src="src/images/in-frieden/screenshot.png" alt="">
             <!-- The Modal -->
             <div id="myModal" class="modal">
               <!-- The Close Button -->
@@ -105,15 +98,15 @@
               <!-- Modal Content (The Images) -->
                 <!-- Image 1 -->
                 <div class="mySlides fade">
-                  <img class= "modal-content" src="src/images/screenshot_bjj.png">
+                  <img class= "modal-content" src="src/images/in-frieden/screenshot.png">
                   <div id="caption">
-                    <p>Full student overview, with details, for admins and trainers</p>
+                    <p>Landing page with overview of services</p>
                   </div>
                 </div>
                 
                 <!-- Image 1.2 -->
                 <div class="mySlides fade">
-                  <img class= "modal-content" src="src/images/screenshot_filter.png">
+                  <img class= "modal-content" src="src/images/in-frieden/screenshot_filter.png">
                   <div id="caption">
                     <p>Admin / Teach can filter (via ajax request) and search (via sql query) student database.</p>
                   </div>
@@ -121,7 +114,7 @@
                 
                 <!-- Image 2 -->
                 <div class="mySlides fade">
-                  <img class= "modal-content" src="src/images/profile_1.png">
+                  <img class= "modal-content" src="src/images/in-frieden/profile_1.png">
                   <div id="caption">
                     <p>Each student has their own profile site, with relevant info for them</p>
                   </div>
@@ -129,7 +122,7 @@
 
               <!-- Image 3 -->
               <div class="mySlides fade">
-                <img class= "modal-content" src="src/images/profile_2.png">
+                <img class= "modal-content" src="src/images/in-frieden/profile_2.png">
                 <div id="caption">
                   <p>Teachers can promote student right in their profile. All comments give by teacher are listed here and at relevant profile sections. Also competitions, for which student has registered, are listed.</p>
                 </div>
@@ -137,7 +130,7 @@
 
               <!-- Image 4 -->
               <div class="mySlides fade">
-                <img class= "modal-content" src="src/images/impersonation.png">
+                <img class= "modal-content" src="src/images/in-frieden/impersonation.png">
                 <div id="caption">
                   <p>Admin can impersonate any student for support.</p>
                 </div>
@@ -145,7 +138,7 @@
 
               <!-- Image 5 -->
               <div class="mySlides fade">
-                <img class= "modal-content" src="src/images/competition.png">
+                <img class= "modal-content" src="src/images/in-frieden/competition.png">
                 <div id="caption">
                   <p>Students and teachers can add competitions to platform, so that they have an overview of what's coming up. Once a competition is added to the database, any student can register.</p>
                 </div>
@@ -153,15 +146,98 @@
 
               <!-- Image 6 -->
               <div class="mySlides fade">
-                <img class= "modal-content" src="src/images/admin_dashboard.png">
+                <img class= "modal-content" src="src/images/in-frieden/admin_dashboard.png">
                 <div id="caption">
                   <p>For more functionalities and flexibility, admin has access to an admin dashboard, with interacts directly with the database.</p>
                 </div>
               </div>
 
               <!-- Next and previous buttons -->
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
+            </div>
+            
+            <p>The app is still online, but I donwgraded it to a free tier heroku plan: <a href="https://in-frieden.herokuapp.com/" target="_blank">Demo App</a> *</p>
+            
+            <p><small>* The free tier heroku plan may take up to 30s to launch the app..</small></p>
+              
+          </div>
+        </div>
+
+        <!-- BJJ DOJO BERLIN -->
+        <div class="list-item">
+          <p>Freelance @ <a href="https://bjj.berlin/en/bjj-movement-yoga/" target="_blank">Bjj Dojo Berlin</a></p>
+          <div class="accordion"><i class="fas fa-plus"></i></div>
+          <div class="panel">
+            <p>Created a student management system for the teachers and students of Bjj Dojo Berlin. Check out the images:</p>
+            
+            <!-- Image, trigger modal -->
+            <img id="modalTrigger" class="preview-img" src="src/images/bjj/screenshot_bjj.png" alt="">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              
+              <!-- Modal Content (The Images) -->
+                <!-- Image 1 -->
+                <div class="mySlides fade">
+                  <img class= "modal-content" src="src/images/bjj/screenshot_bjj.png">
+                  <div id="caption">
+                    <p>Full student overview, with details, for admins and trainers</p>
+                  </div>
+                </div>
+                
+                <!-- Image 1.2 -->
+                <div class="mySlides fade">
+                  <img class= "modal-content" src="src/images/bjj/screenshot_filter.png">
+                  <div id="caption">
+                    <p>Admin / Teach can filter (via ajax request) and search (via sql query) student database.</p>
+                  </div>
+                </div>
+                
+                <!-- Image 2 -->
+                <div class="mySlides fade">
+                  <img class= "modal-content" src="src/images/bjj/profile_1.png">
+                  <div id="caption">
+                    <p>Each student has their own profile site, with relevant info for them</p>
+                  </div>
+                </div>
+
+              <!-- Image 3 -->
+              <div class="mySlides fade">
+                <img class= "modal-content" src="src/images/bjj/profile_2.png">
+                <div id="caption">
+                  <p>Teachers can promote student right in their profile. All comments give by teacher are listed here and at relevant profile sections. Also competitions, for which student has registered, are listed.</p>
+                </div>
+              </div>
+
+              <!-- Image 4 -->
+              <div class="mySlides fade">
+                <img class= "modal-content" src="src/images/bjj/impersonation.png">
+                <div id="caption">
+                  <p>Admin can impersonate any student for support.</p>
+                </div>
+              </div>
+
+              <!-- Image 5 -->
+              <div class="mySlides fade">
+                <img class= "modal-content" src="src/images/bjj/competition.png">
+                <div id="caption">
+                  <p>Students and teachers can add competitions to platform, so that they have an overview of what's coming up. Once a competition is added to the database, any student can register.</p>
+                </div>
+              </div>
+
+              <!-- Image 6 -->
+              <div class="mySlides fade">
+                <img class= "modal-content" src="src/images/bjj/admin_dashboard.png">
+                <div id="caption">
+                  <p>For more functionalities and flexibility, admin has access to an admin dashboard, with interacts directly with the database.</p>
+                </div>
+              </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
             </div>
             
             <p>Here's a demo version, which I prepared with anonymous user data: <a href="http://bjj-demo.herokuapp.com/" target="_blank">Demo App</a> *</p>
@@ -175,6 +251,7 @@
               
           </div>
         </div>
+
       </div>
       
       <div class="grid-item">

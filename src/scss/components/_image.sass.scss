@@ -1,13 +1,13 @@
 @use "../config/config.sass.scss" as *;
 
-#myImg {
+#modalTrigger {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
   width: 100%;
 }
 
-#myImg:hover {opacity: 0.7;}
+#modalTrigger:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {

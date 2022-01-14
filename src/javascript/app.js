@@ -43,55 +43,60 @@ for (i = 0; i < acc.length; i++) {
 }
 
 // IMAGE PREVIEW
-// Get the modal
-var modal = document.getElementById("myModal");
+// Get the image previews
+var imgs = document.querySelectorAll("#modalTrigger");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-// var modalImg = document.getElementById("img01");
-// var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  // modalImg.src = this.src;
-  // captionText.innerHTML = "Hi there" //this.alt;
-}
+// For each image preview, insert Modal and Carroussell
+imgs.forEach((img) => {
+  
+  img.onclick = function(){
+    var imgScope = this.parentElement;
+    
+    // Get the modal
+    var modal = imgScope.querySelector("#myModal");
+    modal.style.display = "block";
+  
+    // Get the <span> element that closes the modal
+    var span = imgScope.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    } 
+    
+    // CARROUSSELL
+    var slideIndex = 1;
+    var scope = imgScope;
+    showSlides(slideIndex, scope);
+    
+    // Next control
+    next = imgScope.querySelector(".next");
+    next.onclick = function() {
+      showSlides(slideIndex += 1, imgScope);
+    }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+    // Prev control
+    prev = imgScope.querySelector(".prev");
+    prev.onclick = function() {
+      showSlides(slideIndex -= 1, imgScope);
+    }
+    
+    // Function to define which img to show
+    function showSlides(n, scope) {
+      console.log(n);
+      console.log(scope);
+      var i;
+      var slides = scope.getElementsByClassName("mySlides");
+      // var dots = scope.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+        slides[slideIndex-1].style.display = "block";
+      };
+ 
+    };
+ 
+  }); 
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-} 
-
-
-
-// CARROUSSELL
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-// function currentSlide(n) {
-  // showSlides(slideIndex = n);
-// }
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  // dots[slideIndex-1].className += " active";
-} 
