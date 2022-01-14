@@ -10,11 +10,9 @@
 
 .grid-item {
   text-align: left;
-  // background-color: blue;
-  width: 330px;
+  width: 300px;
   height: auto;
   margin: 0 auto;
-  // padding: 10px 10px 10px 42px;
 }
 
 .list-item {
@@ -29,8 +27,7 @@
 @media (min-width: 100px) and (max-width: 575px) {
   .grid-item {
     // padding: 12px 12px 64px 12px;
-    // width: 100%;
-    padding-left: 42px;
+    padding-left: 20px;
   }
   
 }

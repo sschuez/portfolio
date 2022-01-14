@@ -88,8 +88,6 @@ input:checked + .slider:before {
 .intro-card {
   border-radius: 25px;
   background: #faedcd;
-  line-height: 1.5em;
-  letter-spacing: 0.3px;
   box-shadow: 2px 1px 1px #faedcd;
   position: relative;
 }
@@ -449,7 +447,7 @@ body {
 
 .grid-item {
   text-align: left;
-  width: 330px;
+  width: 300px;
   height: auto;
   margin: 0 auto;
 }
@@ -464,7 +462,7 @@ body {
 /* Smallest device */
 @media (min-width: 100px) and (max-width: 575px) {
   .grid-item {
-    padding-left: 42px;
+    padding-left: 20px;
   }
 }
 /* Small devices (landscape phones, 576px and up) */
