@@ -376,9 +376,8 @@ input:checked + .slider:before {
 }
 
 .video-caption {
-  margin-top: -6px !important;
   position: absolute;
-  bottom: 12px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   color: #fefae0 !important;
