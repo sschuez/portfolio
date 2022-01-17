@@ -4,7 +4,6 @@ function darkMode() {
   element.classList.toggle("dark-mode");
 }
 
-
 // CURRENT AGE CALCULATOR
 var dob = new Date("08/17/1988");  
 //calculate month difference from current date in time  
@@ -20,7 +19,7 @@ document.querySelector(".my-age").innerHTML = `🙋‍♂️ ${age} years old`;
 
 
 // ACCORDION  
-var acc = document.getElementsByClassName("accordion");
+var acc = document.querySelectorAll("#accordion1");
 var i;
 
 for (i = 0; i < acc.length; i++) {
@@ -30,7 +29,8 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
     
     /* Toggle between hiding and showing the active panel */
-    var iconClass = this.querySelector(".fas").classList; 
+    var iconClass = this.querySelector(".fas").classList;
+    // var iconClassParent = this.parentElement.parentElement.querySelector(".fas").classList;
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
@@ -38,9 +38,54 @@ for (i = 0; i < acc.length; i++) {
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
       iconClass.replace("fa-plus", "fa-minus");
+      // iconClassParent.replace("fa-plus", "fa-minus");
     }
   });
 }
+
+// ACCORDION ALL
+// var gridItems = document.getElementsByClassName("grid-item");
+var accs = document.querySelectorAll("#accordionAll");
+
+// Event Listener for all AccordionAlls
+accs.forEach((acc) => {
+  // Hide Plus if no accordions below
+  if (acc.parentElement.parentElement.querySelectorAll("#accordion1").length === 0) { acc.classList.add("hidden") }
+
+  acc.addEventListener("click", function() {
+    
+    // Toggle Icon
+    acc.classList.toggle("active");
+    var iconClass = this.querySelector(".fas").classList;
+    if (iconClass.contains("fa-plus")) {
+      iconClass.replace("fa-plus", "fa-minus");
+    } else {
+      iconClass.replace("fa-minus", "fa-plus");
+    }
+
+    // Loop through all accordions
+    var gridAccordions = this.parentElement.parentElement.querySelectorAll("#accordion1");
+    gridAccordions.forEach((gridAccordion) => {
+      
+      // Add Active class to all accordions
+      gridAccordion.classList.toggle("active");
+      
+      //  Toggle between hiding and showing the active panel 
+      var iconClass = gridAccordion.querySelector(".fas").classList; 
+      var panel = gridAccordion.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        iconClass.replace("fa-minus", "fa-plus");
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        iconClass.replace("fa-plus", "fa-minus");
+      }
+
+    })
+
+  })
+
+})
 
 // IMAGE PREVIEW
 // Get the image previews

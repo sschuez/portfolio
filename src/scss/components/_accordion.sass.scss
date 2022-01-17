@@ -34,6 +34,15 @@
   flex-basis: 100%;
   border-radius: 3px 3px 16px 16px;
   margin: -12px 0 12px 0;
+  h4 {
+    margin-bottom: 3px;
+  }
+  p {
+    margin-top: 6px;
+  }
+  br {
+    margin-bottom: 6px;
+  }
 }
 
 .dark-mode .panel {

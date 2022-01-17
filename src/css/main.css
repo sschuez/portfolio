@@ -162,6 +162,15 @@ input:checked + .slider:before {
   border-radius: 3px 3px 16px 16px;
   margin: -12px 0 12px 0;
 }
+.panel h4 {
+  margin-bottom: 3px;
+}
+.panel p {
+  margin-top: 6px;
+}
+.panel br {
+  margin-bottom: 6px;
+}
 
 .dark-mode .panel {
   background-color: #27323E;
@@ -378,6 +387,10 @@ h3 {
   font-family: "Roboto", sans-serif;
 }
 
+h4 {
+  font-family: "Roboto", sans-serif;
+}
+
 p {
   font-family: "Roboto", sans-serif;
 }
@@ -405,6 +418,10 @@ body {
 
 .dark-mode a {
   columns: red;
+}
+
+.hidden {
+  display: none;
 }
 
 /* RESPONSIVE */
@@ -450,6 +467,10 @@ body {
   width: 300px;
   height: auto;
   margin: 0 auto;
+}
+
+.grid-item-title {
+  display: flex;
 }
 
 .list-item {
