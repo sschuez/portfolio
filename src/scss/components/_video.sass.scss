@@ -1,0 +1,16 @@
+@use "../config/config.sass.scss" as *;
+
+.video-caption {
+  margin-top: -6px !important;
+  position: absolute;
+  bottom: 12px;
+  // left: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: $font-color-dark !important;
+}
+
+.video {
+  margin-top: 56px;
+  position: relative;
+}

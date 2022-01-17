@@ -375,6 +375,20 @@ input:checked + .slider:before {
   margin-top: 50px;
 }
 
+.video-caption {
+  margin-top: -6px !important;
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fefae0 !important;
+}
+
+.video {
+  margin-top: 56px;
+  position: relative;
+}
+
 h1 {
   font-family: "Roboto", sans-serif;
 }
