@@ -30,7 +30,6 @@ for (i = 0; i < acc.length; i++) {
     
     /* Toggle between hiding and showing the active panel */
     var iconClass = this.querySelector(".fas").classList;
-    // var iconClassParent = this.parentElement.parentElement.querySelector(".fas").classList;
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
@@ -38,7 +37,6 @@ for (i = 0; i < acc.length; i++) {
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
       iconClass.replace("fa-plus", "fa-minus");
-      // iconClassParent.replace("fa-plus", "fa-minus");
     }
   });
 }

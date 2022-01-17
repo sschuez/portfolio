@@ -4,13 +4,54 @@
   margin-top: -6px !important;
   position: absolute;
   bottom: 12px;
-  // left: 24px;
   left: 50%;
   transform: translateX(-50%);
   color: $font-color-dark !important;
 }
 
 .video {
-  margin-top: 56px;
   position: relative;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  flex-basis: 100%;
 }
+
+.video-div {
+  margin-top: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* Smallest device */
+@media (min-width: 100px) and (max-width: 575px) {
+  video {
+    width: 100%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
+}
+
+
+
