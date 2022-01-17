@@ -52,34 +52,50 @@ accs.forEach((acc) => {
 
   acc.addEventListener("click", function() {
     
+    // All accordion1s
+    var gridAccordions = this.parentElement.parentElement.querySelectorAll("#accordion1");
+    
     // Toggle Icon
     acc.classList.toggle("active");
     var iconClass = this.querySelector(".fas").classList;
+    
     if (iconClass.contains("fa-plus")) {
-      iconClass.replace("fa-plus", "fa-minus");
+      
+      // Swith icon to minus
+      iconClass.replace("fa-plus", "fa-minus")
+      
+      gridAccordions.forEach((gridAccordion) => {
+        var iconClass = gridAccordion.querySelector(".fas").classList; 
+        var panel = gridAccordion.nextElementSibling;
+        
+        // Add Active class to all accordions - expand all panes
+        if (gridAccordion.classList.contains("active")) {
+           // That's great, do nothing 
+        } else {
+          gridAccordion.classList.add("active")
+          panel.style.maxHeight = panel.scrollHeight + "px"
+          iconClass.replace("fa-plus", "fa-minus")
+        }
+      })
+      
     } else {
-      iconClass.replace("fa-minus", "fa-plus");
+      
+      // Switch icon to plus
+      iconClass.replace("fa-minus", "fa-plus")
+      
+      gridAccordions.forEach((gridAccordion) => {
+        var iconClass = gridAccordion.querySelector(".fas").classList; 
+        var panel = gridAccordion.nextElementSibling;
+        
+        // Collapse all panels
+        if (gridAccordion.classList.contains("active")) {
+          gridAccordion.classList.remove("active")
+          panel.style.maxHeight = null
+          iconClass.replace("fa-minus", "fa-plus")
+        }
+
+      })
     }
-
-    // Loop through all accordions
-    var gridAccordions = this.parentElement.parentElement.querySelectorAll("#accordion1");
-    gridAccordions.forEach((gridAccordion) => {
-      
-      // Add Active class to all accordions
-      gridAccordion.classList.toggle("active");
-      
-      //  Toggle between hiding and showing the active panel 
-      var iconClass = gridAccordion.querySelector(".fas").classList; 
-      var panel = gridAccordion.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-        iconClass.replace("fa-minus", "fa-plus");
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-        iconClass.replace("fa-plus", "fa-minus");
-      }
-
-    })
 
   })
 
