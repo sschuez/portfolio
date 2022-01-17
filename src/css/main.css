@@ -400,16 +400,21 @@ input:checked + .slider:before {
   justify-content: center;
 }
 
+#anim {
+  border-radius: 10px;
+}
+
 /* Smallest device */
 @media (min-width: 100px) and (max-width: 575px) {
-  video {
+  #anim {
     width: 100%;
+    height: 100%;
+  }
+
+  .video-caption {
+    font-size: 18px;
   }
 }
-/* Small devices (landscape phones, 576px and up) */
-/* Medium devices (tablets, 768px and up) */
-/* Large devices (desktops, 992px and up) */
-/* Extra large devices (large desktops, 1200px and up) */
 h1 {
   font-family: "Roboto", sans-serif;
 }

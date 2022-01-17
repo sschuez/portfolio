@@ -157,3 +157,16 @@ imgs.forEach((img) => {
  
   }); 
 
+
+// LOOP GIF
+var gif = document.getElementById("anim")
+
+gif.addEventListener("click", function() {
+  restart("anim", "src/images/misc/margareti.gif")
+});
+
+function restart(id,url) { 
+  var img = document.getElementById(id) 
+  img.src = "" 
+  img.src = url
+}
