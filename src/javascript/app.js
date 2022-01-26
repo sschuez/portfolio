@@ -4,6 +4,11 @@ function darkMode() {
   element.classList.toggle("dark-mode");
 }
 
+// CHECK OUT MY STACK CLICK
+function clickStack() {
+  document.querySelector('.myStack').click();
+}
+
 // CURRENT AGE CALCULATOR
 var dob = new Date("08/17/1988");  
 //calculate month difference from current date in time  
