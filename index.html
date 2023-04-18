@@ -122,7 +122,74 @@
             </small></p>
           </div>
         </div>
-       
+
+        <!-- TRANSLAITE -->
+        <div class="list-item">
+          <p>Own initiative: <a href="https://www.translaite.com/" target="_blank">Translaite</a></p>
+          <div class="accordion" id="accordion1"><i class="fas fa-plus"></i></div>
+          <div class="panel">
+            <p>In 2023, as a side project to experiement with chatGPT's API, I developed an app that translates non-English prompts to English (via DeepL) and only then requests a ChatGPT completion, which, in turn, gets translated back to the input language. Click on the image below for more details:</p>
+            
+            <!-- Image, trigger modal -->
+            <img id="modalTrigger" class="preview-img" src="src/images/translaite/screenshot_1.png" alt="">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              
+              <!-- Modal Content (The Images) -->
+                <!-- Image 1 -->
+                <div class="mySlides fade">
+                  <img class= "modal-content" src="src/images/translaite/screenshot_1.png">
+                  <div id="caption">
+                    <p>Users can prompt chatGPT like on openAI, in any DeepL supported language. The response gets added to the page wihtout a full page refresh thanks to Hotwire.</p>
+                  </div>
+                </div>
+                
+                <!-- Image 2 -->
+                <div class="mySlides fade">
+                  <img class= "modal-content" src="src/images/translaite/screenshot_2.png">
+                  <div id="caption">
+                    <p>Users get a number of funtionalities, including a searchable chat or prompt history, account & subscriptions overview and for admins and admin panel.</p>
+                  </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="mySlides fade">
+                  <img class= "modal-content" src="src/images/translaite/screenshot_3.png">
+                  <div id="caption">
+                    <p>Prompts can be shared with other or copied into clipboard for further usage.</p>
+                  </div>
+                </div>
+                
+                <!-- Image 4 -->
+                <div class="mySlides fade">
+                  <img class= "modal-content" src="src/images/translaite/screenshot_4.png">
+                  <div id="caption">
+                    <p>Existing prompts can also be translated into any language.</p>
+                  </div>
+                </div>
+
+              <!-- Image 5 -->
+              <div class="mySlides fade">
+                <img class= "modal-content" src="src/images/translaite/screenshot_5.png">
+                <div id="caption">
+                  <p>The entire page has been internationalised, using i18n tasks gem and DeepL as a backend.</p>
+                </div>
+              </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
+            </div>
+
+            <p>The main goal of this project was to get more familiar with the <a href="https://openai.com/blog/openai-api" target="blank">openAI's API</a> and, using <a href="https://www.deepl.com/docs-api" target="blank">DeepL's API</a> to both pre-translate prompts, as well i18n an entire page. All dynamic aspects, such as adding the responses to the chat page, or translating existing prompts have been coded with Hotwire.</p>
+
+            <p>Check out the app and feel free to use it yourself: <a href="https://www.translaite.com/" target="blank">Translaite</a></p>
+              
+          </div>
+        </div>
+
         <!-- Goormey -->
         <div class="list-item">
           <p>Own initiative: <a href="https://www.goormey.com/" target="_blank">Goormey</a></p>
